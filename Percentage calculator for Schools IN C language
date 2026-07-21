@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, d, e, f, g, sum, fm;
+    float percent; // Use 'float' for decimal numbers
+
+    printf("Enter the marks of maths: ");
+    scanf("%d", &a);
+    printf("Enter the marks of science: ");
+    scanf("%d", &b);
+    printf("Enter the marks of English: ");
+    scanf("%d", &c);
+    printf("Enter the marks of Nepali: ");
+    scanf("%d", &d);
+    printf("Enter the mark in of SST: ");
+    scanf("%d", &e);
+    printf("Enter the marks of OPT I: ");
+    scanf("%d", &f);
+    printf("Enter the marks of OPT II: ");
+    scanf("%d", &g);
+
+    printf("Enter the full marks: ");
+    scanf("%d", &fm);
+
+    sum = a + b + c + d + e + f + g;
+
+    // Multiply by 100.0 to enable floating-point division
+    percent = (sum * 100.0) / fm;
+
+    printf("The percentage is %.2f%%\n", percent);
+
+    return 0;
+}
